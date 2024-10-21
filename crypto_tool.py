@@ -28,7 +28,7 @@ def encrypt(input_file):
 			print(f"File {input_file} encrypted and saved as {input_file}.encrypted")
 
 		except FileNotFoundError:
-			print(f"[ERROR] Invalid file input: {input_file}")
+			print(f"[ERROR] Input file not existing: {input_file}")
 
 def decrypt(input_file):
 	key = setup_key()
@@ -51,7 +51,7 @@ def decrypt(input_file):
 		print(f"File {input_file} decrypted and saved as {og_filename}")
 
 	except FileNotFoundError:
-		print(f"[ERROR] Invalid file input: {input_file}")
+		print(f"[ERROR] Input file not existing: {input_file}")
 
 	except Exception:
 		print(f"[ERROR] Corrupted file or trying to decrypt a plain text file")
