@@ -69,4 +69,5 @@ def main():
 	elif args.d:
 		decrypt(args.d)
 
-main()
+if __name__ == "__main__":
+    main()
